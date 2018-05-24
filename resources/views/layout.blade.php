@@ -22,6 +22,7 @@
           <ul class="nav navbar-nav">
             <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/' ? 'active' : '');?>"><a href="/outlookProject/public">Home</a></li>
             <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/mail' ? 'active' : '');?>"><a href="/outlookProject/public/mail">Inbox</a></li>
+            <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/addRow' ? 'active' : '');?>"><a href="/outlookProject/public/addRow">Add Row</a></li>
           </ul>
           <?php if(isset($username)) { ?>
           <ul class="nav navbar-nav navbar-right">

@@ -77,7 +77,7 @@ class AuthController extends Controller
               // Redirect back to mail page
               return redirect()->route('mail');
           }
-          catch (League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
+          catch (\League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
               exit('ERROR getting tokens: '.$e->getMessage());
           }
           exit();
